@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hold Your Left Click</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Particles JS -->
+    <div id="particles-js" class="w-[100%] h-screen absolute z-[2]"></div>
+
+    <section class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% relative">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 relative z-[4]">
+            <div class="w-full bg-indigo-600 rounded-lg space-y-4 shadow p-6 md:mt-0 sm:max-w-md">
+                <h1 class="text-center text-3xl text-white font-bold">Click and Hold the Button</h1>
+
+                <div id="timer" class="text-center text-3xl text-white">
+                    <span id="hour">00</span>
+                    <span>:</span>
+                    <span id="minute">00</span>
+                    <span>:</span>
+                    <span id="second">00</span>
+                </div>
+
+                <button id="timerButton" class="flex">
+                    <img id="buttonImage" class="px-10 w-6justify-center items-center" src="../src/img/button.png" alt="">
+                </button>
+            </div>
+        </div>
+
+
+        <script src="../node_modules/particles.js/particles.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
